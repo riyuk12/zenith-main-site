@@ -11,58 +11,7 @@ export default function EventPage() {
   
   // In a real application, this would be fetched from an API
   const eventData = {
-    "tech-talk-2024": {
-      title: "Tech Talk: Future of AI",
-      date: "Live Now",
-      time: "Started at 10:00 AM",
-      location: "Main Hall",
-      capacity: "200 attendees",
-      currentAttendees: 156,
-      description: "Join us for an exciting discussion about the future of Artificial Intelligence and its impact on society. Leading experts from the industry will share their insights and predictions.",
-      image: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&q=80&w=1000",
-      isLive: true,
-    },
-    "coding-workshop": {
-      title: "Live Coding Workshop",
-      date: "Live Now",
-      time: "Started at 2:00 PM",
-      location: "Lab 302",
-      capacity: "50 participants",
-      currentAttendees: 45,
-      description: "Hands-on coding workshop where participants will learn modern web development techniques. Bring your laptop and get ready to code!",
-      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1000",
-      isLive: true,
-    },
-    "tech-symposium": {
-      title: "Annual Tech Symposium",
-      date: "March 15, 2024",
-      time: "10:00 AM",
-      location: "Main Auditorium",
-      capacity: "300 attendees",
-      description: "Our flagship annual event bringing together industry leaders, academics, and students to explore the latest trends in technology.",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=1000",
-      isLive: false,
-    },
-    "hackathon-2024": {
-      title: "Hackathon Spring 2024",
-      date: "April 5-7, 2024",
-      time: "48 hours",
-      location: "Innovation Hub",
-      capacity: "150 teams",
-      description: "48 hours of coding, creativity, and innovation. Form teams, build projects, and compete for amazing prizes!",
-      image: "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?auto=format&fit=crop&q=80&w=1000",
-      isLive: false,
-    },
-    "ai-workshop": {
-      title: "AI Workshop Series",
-      date: "Every Saturday",
-      time: "2:00 PM",
-      location: "Room 401",
-      capacity: "50 participants",
-      description: "Weekly workshops covering various aspects of Artificial Intelligence and Machine Learning. Perfect for beginners and intermediate learners.",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1000",
-      isLive: false,
-    },
+    
   };
 
   const event = eventData[id as keyof typeof eventData];
