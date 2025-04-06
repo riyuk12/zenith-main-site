@@ -51,12 +51,12 @@ export default function EventPage() {
             >
               <div className="aspect-video rounded-lg overflow-hidden">
                 <img
-                  src={event.image}
-                  alt={event.title}
+                  src={event?.image}
+                  alt={event?.title}
                   className="w-full h-full object-cover"
                 />
               </div>
-              {event.isLive && (
+              {event?.isLive && (
                 <div className="absolute top-4 left-4 bg-destructive text-destructive-foreground px-3 py-1 rounded-full flex items-center gap-2">
                   <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-destructive-foreground opacity-75"></span>
@@ -72,37 +72,37 @@ export default function EventPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4 }}
             >
-              <h1 className="text-4xl font-bold mb-6">{event.title}</h1>
+              <h1 className="text-4xl font-bold mb-6">{event?.title}</h1>
               
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Calendar className="h-5 w-5" />
-                  <span>{event.date}</span>
+                  <span>{event?.date}</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Clock className="h-5 w-5" />
-                  <span>{event.time}</span>
+                  <span>{event?.time}</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <MapPin className="h-5 w-5" />
-                  <span>{event.location}</span>
+                  <span>{event?.location}</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Users className="h-5 w-5" />
                   <span>
-                    {event.isLive 
-                      ? `${event.currentAttendees}/${event.capacity} attending`
-                      : event.capacity}
+                    {event?.isLive 
+                      ? `${event?.currentAttendees}/${event?.capacity} attending`
+                      : event?.capacity}
                   </span>
                 </div>
               </div>
 
               <p className="text-muted-foreground mb-8">
-                {event.description}
+                {event?.description}
               </p>
 
               <Button size="lg" className="w-full md:w-auto">
-                {event.isLive ? "Join Live" : "Register Now"}
+                {event?.isLive ? "Join Live" : "Register Now"}
               </Button>
             </motion.div>
           </div>
