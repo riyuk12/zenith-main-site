@@ -12,7 +12,7 @@ export default function Home() {
       id: "Nexify-2025",
       title: "Nexify 2025 Hackathon",
       startTime: "10:00 AM",
-      currentAttendees: "250+",
+      currentAttendees: 257,
       maxCapacity: 500,
       location: "Sushant University Campus",
       image: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&q=80&w=1000",
