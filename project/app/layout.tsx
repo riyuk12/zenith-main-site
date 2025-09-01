@@ -1,19 +1,18 @@
 import './globals.css'
-import type { Metadata, Viewport } from 'next'
+import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Zenith Club',
-  description:
-    'This is main page for the Zenith Club . A premier event management club.',
-  openGraph: {
-    title: 'Zenith | Event Management Club',
-    description:
-      'A flagship student-run club for event management and creative production.',
+  description: 'This is the main page for the Zenith Club.',
+  // fallback way for viewport
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
   },
-  themeColor: '#00ff9d',
 }
 
 export const viewport: Viewport = {
