@@ -7,7 +7,6 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Zenith Club',
   description: 'This is the main page for the Zenith Club.',
-  // fallback way for viewport
   viewport: {
     width: 'device-width',
     initialScale: 1,
@@ -15,15 +14,14 @@ export const metadata: Metadata = {
   },
 }
 
-export const viewport: Viewport = {
-  width: 'device-width',
-  initialScale: 1,
-}
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} antialiased selection-accent`}>
+      <body className={`${inter.className} antialiased selection:bg-accent`}>
         {children}
       </body>
     </html>
