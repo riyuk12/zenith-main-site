@@ -11,8 +11,6 @@ export const metadata: Metadata = {
 
 export default function RootLayout() {
   return (
-    <!DOCTYPE html>
-<!-- saved from url=(0041)https://s3.zenithclub.in/share/index.html -->
 <html lang="en" class="scroll-smooth"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
